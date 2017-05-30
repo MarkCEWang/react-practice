@@ -1,0 +1,78 @@
+body {
+  background: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 8px;
+}
+button:focus {
+  outline: 2px solid hsl(200, 50%, 50%);
+}
+a:link,
+a:visited {
+  color: #0366D6;
+  text-decoration: none;
+}
+a:link:hover {
+  text-decoration: underline;
+}
+
+#index .lecture-link {
+  font-size: 1.2em;
+}
+#index .lecture-link a:link,
+#index .lecture-link a:visited {
+  color: black;
+}
+#index header {
+  margin: 2em auto;
+  max-width: 366px;
+  width: 100%;
+}
+#index table {
+  margin: 3em auto;
+}
+#index table tr.odd {
+  background: #e3e3e3;
+}
+#index table td {
+  padding: 16px;
+}
+#index table td.exercise-link {
+  padding-left: 24px;
+}
+#index table td.notes-link {
+  padding-left: 24px;
+}
+
+.ContentToggle {
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  background: #fff;
+}
+.ContentToggle__Summary {
+  cursor: pointer;
+  border: none;
+  background: inherit;
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  font: inherit;
+  border-bottom: solid 1px transparent;
+}
+.ContentToggle__Summary:before {
+  display: inline-block;
+  width: 1em;
+  content: '▸';
+}
+.ContentToggle__Summary--is-open:before {
+  content: '▾';
+}
+.ContentToggle__Details {
+  padding: 0 10px;
+}
+
+.hot {
+  color: red;
+}
